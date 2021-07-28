@@ -20,6 +20,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     name: ${{ matrix.os }} (${{matrix.arch}})
     steps:
+    - uses: actions/checkout@master
+
+    - name: Setup VS2019
+      if: startsWith(matrix.os, 'windows')
+      uses: warrenbuckley/Setup-MSBuild@v1
+      
     - name: Checkout Code
       uses: actions/checkout@v2
     

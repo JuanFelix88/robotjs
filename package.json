@@ -49,6 +49,10 @@
     "tape": "^4.8.0",
     "jasmine": "^2.99.0",
     "prebuild": "^9.1.1",
+    "tar": "^6.0.5",
+    "node-abi": "^2.19.3",
+    "node-gyp": "^7.1.2",
+    "minimist": "^1.2.5",
     "run-script-os": "^1.0.3",
     "targetpractice": "0.0.7"
   }

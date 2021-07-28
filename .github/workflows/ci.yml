@@ -16,10 +16,11 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     
-    - name: Use Node.js ${{ matrix.node-version }}
-    - uses: actions/setup-node@v2
+    - name: Setup Node
+      uses: actions/setup-node@v2
       with:
         # Set registry to NPM instead of github packages for publication
         registry-url: 'https://registry.npmjs.org'

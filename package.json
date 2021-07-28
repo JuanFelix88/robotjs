@@ -55,5 +55,12 @@
     "minimist": "^1.2.5",
     "run-script-os": "^1.0.3",
     "targetpractice": "0.0.7"
-  }
+  },
+  "supportedTargets": [
+    [
+      "node",
+      "14.0.0",
+      "83"
+    ]
+  ]
 }

@@ -24,7 +24,7 @@ jobs:
 
     - name: Setup VS2019
       if: startsWith(matrix.os, 'windows')
-      uses: warrenbuckley/Setup-MSBuild@v1
+      run: npm install --global --production windows-build-tools
       
     - name: Checkout Code
       uses: actions/checkout@v2

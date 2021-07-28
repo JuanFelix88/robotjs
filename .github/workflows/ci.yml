@@ -13,8 +13,12 @@ jobs:
         os: [windows-latest]
         arch: [x86_64]
         node-version: [14]
+        include:
+          - os: windows-latest
+            arch: i686
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     runs-on: ${{ matrix.os }}
+    name: ${{ matrix.os }} (${{matrix.arch}})
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
